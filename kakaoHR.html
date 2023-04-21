@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카카오뱅크 인재영입 Clone coding</title>
+  <link rel="stylesheet" href="./css/kakaoHR.css">
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans:400" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div id="nav-wrapper">
+      <a href="/" id="logo-link">
+        <img id="logo" src="./css/imgs/kakao_logo.svg" alt="kakao logo">
+      </a>
+      <ul id="list-gnb">
+        <li>채용공고</li>
+        <li>이야기</li>
+        <li>자주묻는 질문</li>
+        <li>나의 지원현황</li>
+      </ul>
+    </div>
+  </header>
+  <div id="main-img-wrapper">
+    <img width="320px" src="./css/imgs/icon.png" alt="lovepick image">
+  </div>
+  <div id="intro-main">
+    <p>이미 모두의 은행, 카카오뱅크</p>
+    <p>Work together🫶</p>
+    <p id="join-us-text">Join us!</p>
+    <img id="down-arrow-icon" src="./css/imgs/down-arrow.png" alt="down arrow icon">
+  </div>
+  <ul id="list-item-wrapper">
+    <li class="list-item">26주 적금상품</li>
+    <li class="list-item">경이로운 펀드</li>
+    <li class="list-item">와장창 주식</li>
+    <li class="list-item">복덩이저금통</li>
+    <li class="list-item">NTF란 무엇인가</li>
+    <li class="list-item">ART 투자공식</li>
+    <li class="list-item">제테크에 대하여</li>
+    <li class="list-item">눈길가는 펀드</li>
+    <li class="list-item">필수 주식</li>
+    <li class="list-item">26주 적금</li>
+    <li class="list-item">경이로운 펀드</li>
+    <li class="list-item">와장창 주식</li>
+    <li class="list-item">26주 적금</li>
+    <li class="list-item">경이로운 펀드</li>
+    <li class="list-item">와장창 주식</li>
+    <li class="list-item">26주 적금</li>
+    <li class="list-item">경이로운 펀드</li>
+    <li class="list-item">와장창 주식</li>
+    <li class="list-item">26주 적금</li>
+    <li class="list-item">경이로운 펀드</li>
+    <li class="list-item">와장창 주식</li>
+    <li class="list-item">26주 적금</li>
+    <li class="list-item">경이로운 펀드</li>
+    <li class="list-item">와장창 주식</li>
+  </ul>
+  <main>
+    <section id="panel1-img">
+      <img id="flying-santa-img" src="./css/imgs/santa_flying.png" alt="flying santa">
+    </section>
+  </main>
+
+
+</body>
+
+<script>
+  //변수
+  const listStyleChagneStartY = 300
+  const listStyleChagneEndY = 1794
+  const listItems = document.querySelectorAll('.list-item')
+
+  const division = (listStyleChagneEndY - listStyleChagneStartY) / listItems.length
+
+  const panel1Img = document.getElementById('panel1-img')
+  const flyingSantaImg = document.getElementById('flying-santa-img')
+
+
+  //시작점(position)
+  window.addEventListener("scroll", () => {
+
+    //요소의 Y축 위치 값
+    // console.log(document.getElementById("list-item-wrapper").offsetTop)
+
+    //id가 부여된 경우 삭제
+    if (document.getElementById("on")) document.getElementById("on").removeAttribute("id")
+
+    if (window.scrollY > listStyleChagneStartY && window.scrollY < listStyleChagneEndY) {
+ 
+      //스크롤에 따라 글자색이 변경되도록, index값 활용
+      const targetIndex = Math.round((window.scrollY - listStyleChagneStartY) / division)
+      // const targetIndex = Math.floor((window.scrollY - listStyleChagneStartY) / division)
+      
+      if (listItems[targetIndex]) listItems[targetIndex].id = "on"
+    }
+
+    //현재 보이는 화면의 bottom 위치값
+    const scrollYButtom = window.scrollY + document.documentElement.clientHeight
+
+    // 이미지의 안쪽일때만 (height)
+    if (scrollYButtom > panel1Img.offsetTop && scrollYButtom < panel1Img.offsetTop + panel1Img.offsetHeight) { 
+     
+      //스크롤에 따른 offset과의 차이
+      const translateX = 80 - 80 * 2.1 * (scrollYButtom - panel1Img.offsetTop) / panel1Img.offsetHeight
+      const translateY = -13 + 13 * (scrollYButtom - panel1Img.offsetTop) / panel1Img.offsetHeight
+      const rotationDeg = 23 - 23 * 2.3 * (scrollYButtom - panel1Img.offsetTop) / panel1Img.offsetHeight
+
+      //산타 translate효과
+      flyingSantaImg.style.transform = `translate(${translateX}px, ${translateY}px) rotate(${rotationDeg}deg)`
+    }
+  })
+</script>
+</html>
