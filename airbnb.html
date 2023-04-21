@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone coding</title>
+  <link rel="stylesheet" href="./css/airbnb.css">
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="./css/imgs/logo.png" alt="웹접근성 대체텍스트 fast campus logo">
+    <div id="little-search">
+      <button class="little-search_btn">어디든지</button><span class="divider"></span>
+      <button class="little-search_btn">언제든 일주일</button><span class="divider"></span>
+      <button class="little-search_btn">게스트 추가</button>
+      <div id="search-icon-wrapper">
+        <img id="search-icon" src="./css/imgs/Magnifying_glass_icon.svg
+        " alt="search icon">
+      </div>
+    </div>
+    <div id="header-right-section">
+      <div id="do-airbnb">
+        당신의 강의를 수강하세요.
+      </div>
+      <div id="profile-section">
+        <img width="16" src="./css/imgs/list.svg" alt="list icon">
+        <img width="30" src="./css/imgs/user-circle.svg" alt="user circle icon">
+      </div>
+    </div>
+  </header>
+  <!-- 콘텐츠 영역 -->
+  <div id="category-bar">
+    <button class="category-button" id="active-category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>해외</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>국내</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>이국적인</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>새로운</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>자연친화</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>로맨틱</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>접근성</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>신기한</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>재밌는</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>특이한</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>해외</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>국내</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>이국적인</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>새로운</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>자연친화</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>로맨틱</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>접근성</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>신기한</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>재밌는</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>특이한</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>해외</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>국내</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>이국적인</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>새로운</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>자연친화</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>로맨틱</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>접근성</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>신기한</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>재밌는</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>특이한</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>해외</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>국내</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>이국적인</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>새로운</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>자연친화</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>로맨틱</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>접근성</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>신기한</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>재밌는</div>
+    </button>
+    <button class="category-button">
+      <img class="inactive-img" src="./css/imgs/airplane.svg" alt="airplane icon">
+      <img class="active-img" src="./css/imgs/airplane_black.svg" alt="airplane icon">
+      <div>특이한</div>
+    </button>
+  </div>
+  <main>
+    <div id="place-items-wrapper">
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/id/188/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/id/203/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+      <div class="place-list-item">
+        <div class="place-image-wrapper">
+          <img src="https://picsum.photos/1900/1000" alt="place image">
+          <img class="heart-icon" src="./css/imgs/heart.svg" alt="heart icon">
+        </div>
+        <div class="description-section">
+          <div class="description-section_title">lorem ipsum</div>
+          <div>lorem ipsum2</div>
+          <div>lorem ipsum3</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+  <button id="floating-map-button">
+    <span>지도 표시하기</span>
+    <img width="16" src="./css/imgs/map-trifold.svg" alt="floating button">
+  </button>
+</body>
+
+<script>
+  //어디에 달꺼야? 요소선택(dom에서 가져옴 - object)
+  document.querySelectorAll('.category-button').forEach(button => {
+    button.addEventListener("click", event => {
+      //기존에 active -> inactive
+      //누른것 active
+      document.querySelector("#active-category-button").removeAttribute('id')
+
+      button.setAttribute('id', 'active-category-button')
+    })
+  });
+</script>
+
+</html>
